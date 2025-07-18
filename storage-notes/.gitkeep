@@ -1,0 +1,2 @@
+# This file makes sure that the storage-notes directory is tracked by Git even if it is empty.
+# The folder stores all user-generated notes.

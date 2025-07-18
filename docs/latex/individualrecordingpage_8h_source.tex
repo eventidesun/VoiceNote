@@ -1,0 +1,36 @@
+\doxysection{individualrecordingpage.\+h}
+\hypertarget{individualrecordingpage_8h_source}{}\label{individualrecordingpage_8h_source}\index{individual\_recording\_page/individualrecordingpage.h@{individual\_recording\_page/individualrecordingpage.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ INDIVIDUALRECORDINGPAGE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INDIVIDUALRECORDINGPAGE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../editor\_class/editor.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }Ui\ \{\ \textcolor{keyword}{class\ }IndividualRecordingPage;\ \}}
+\DoxyCodeLine{00010\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_individual_recording_page_ad62d2fa6e08426fb3c93970c7d285aff}{IndividualRecordingPage}}\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_individual_recording_page_ad62d2fa6e08426fb3c93970c7d285aff}{IndividualRecordingPage}}(QWidget\ *parent,\ \mbox{\hyperlink{classeditor}{editor}}\ editorObj,\ \textcolor{keyword}{const}\ std::string\&\ fileName);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_individual_recording_page_a98672dd60bb70af9c2c794f155be9c54}{\string~IndividualRecordingPage}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ onSaveTranscriptClicked();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ onSummarizeClicked();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00063\ \ \ \ \ Ui::IndividualRecordingPage\ *\mbox{\hyperlink{class_individual_recording_page_abc8de30f45b76b7c32c5812ff82f92bd}{ui}};}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{classeditor}{editor}}\ m\_editor;}
+\DoxyCodeLine{00065\ \ \ \ \ std::string\ m\_fileName;}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ INDIVIDUALRECORDINGPAGE\_H}}
+
+\end{DoxyCode}

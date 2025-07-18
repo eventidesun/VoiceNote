@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IndividualRecordingPage</class>
+ <widget class="QWidget" name="IndividualRecordingPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1512</width>
+    <height>858</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IndividualRecordingPage</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QWidget {
+    background-color: #fdfaf5;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    }
+
+    QLabel {
+    color: #1a1a1a;
+    font-weight: bold;
+    }
+
+    QPushButton {
+    background-color: #007acc;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: bold;
+    }
+
+    QPushButton:hover {
+    background-color: #005f99;
+    }
+
+    QPushButton#saveTranscript_button,
+    QPushButton#saveSummary_button {
+    padding: 4px 10px;
+    font-size: 13px;
+    min-width: 60px;
+    max-width: 80px;
+    }
+
+    QPlainTextEdit {
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 6px;
+    color: #333333;
+    }
+
+    QGroupBox {
+    border: none;
+    margin-top: 10px;
+    }
+
+    QPushButton#summarize_button {
+    padding: 4px 10px;
+    font-size: 13px;
+    min-width: 60px;
+    max-width: 80px;
+    }
+
+    QLabel#pageTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    }
+   </string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+
+   <item row="1" column="0">
+    <widget class="QLabel" name="recording_name">
+     <property name="text">
+      <string>Recording Name:</string>
+     </property>
+    </widget>
+   </item>
+
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="transcript_groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Transcript:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QPlainTextEdit" name="plainTextEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item row="3" column="0">
+    <layout class="QHBoxLayout">
+     <item>
+      <spacer name="horizontalSpacer_transcript">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveTranscript_button">
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <item row="4" column="0">
+    <widget class="Line" name="divider_line">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+
+   <item row="5" column="0">
+    <widget class="QGroupBox" name="summary_groupBox_2">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Summary:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QPlainTextEdit" name="outputTextEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item row="6" column="0">
+    <layout class="QHBoxLayout">
+     <item>
+      <spacer name="horizontalSpacer_summary">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="summarize_button">
+       <property name="text">
+        <string>Summarize</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveSummary_button">
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,60 @@
+\doxysection{editor.\+h}
+\hypertarget{editor_8h_source}{}\label{editor_8h_source}\index{editor\_class/editor.h@{editor\_class/editor.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EDITOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EDITOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ Importing\ c++\ libraies\ and\ storage\ class\ }}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../storage\_class/storage.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classeditor_a6376583de10b074e70084878b4908af0}{editor}}\{}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classeditor_a6376583de10b074e70084878b4908af0}{editor}}(\mbox{\hyperlink{classstorage}{storage}}\ store);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classeditor_a90583c8ba5e6c4b44e905d0fd19a0569}{loadFile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ fileName);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classeditor_ad58125b6a186ff8caab1d685ec32c0be}{findString}}(\textcolor{keywordtype}{string}\ s);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00088\ \ \ \ \ vector<string>\ \mbox{\hyperlink{classeditor_a48e469ac2fa6c74e66550ad38f2ad154}{getFileList}}();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classeditor_a8713b2f830d0c68429e06723f9f38f28}{changeName}}(\textcolor{keywordtype}{string}\ newFile,\ \textcolor{keywordtype}{string}\ oldFile);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classeditor_adb3935421048c342c4a21bb476941b5e}{replaceString}}(\textcolor{keywordtype}{string}\ s);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classeditor_a206dfc857fe9850d8bbee8de676ae614}{saveEdit}}();}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classeditor_a91b9a4fdbdb76093c021f42b748650eb}{deleteFile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ fileName);}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \mbox{\hyperlink{classstorage}{storage}}\&\ getStorage();}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{comment}{//variables}}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00156\ \ \ \ \ \mbox{\hyperlink{classstorage}{storage}}\ \mbox{\hyperlink{classeditor_a2604a6fd361918970c2e2a5f6e7d09ef}{storage1}};}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classeditor_add6e0f06b6c9e1b92b8779f8bf69757d}{temp}};}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classeditor_af56e03795604e5fdcc6bbb7eab6582d8}{file}};}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classeditor_a073d56b42a715cbad132bd01d29fbf3a}{index}};}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classeditor_abf1678aae89ecb7ca8bda61f21e20966}{length}};}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \};}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

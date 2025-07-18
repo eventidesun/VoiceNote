@@ -1,0 +1,147 @@
+\doxysection{Speech\+To\+Text Class Reference}
+\hypertarget{class_speech_to_text}{}\label{class_speech_to_text}\index{SpeechToText@{SpeechToText}}
+
+
+A class for recording and transcribing audio.  
+
+
+
+
+{\ttfamily \#include $<$speechtotext.\+h$>$}
+
+Inheritance diagram for Speech\+To\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_speech_to_text}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_speech_to_text_a570656da79877475c8e11250354535bb}{Speech\+To\+Text}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_speech_to_text}{Speech\+To\+Text} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_speech_to_text_ad2107b90fc1fbd1390ea8bdb673f2c62}\label{class_speech_to_text_ad2107b90fc1fbd1390ea8bdb673f2c62} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Speech\+To\+Text} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_speech_to_text}{Speech\+To\+Text} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_speech_to_text_a9b10ade87f8c36d996a852c74a8d4809}{start\+Recording}} ()
+\begin{DoxyCompactList}\small\item\em Starts audio recording. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speech_to_text_a867ea9fa0c4799eac383ff97a0372fce}{pause\+Recording}} ()
+\begin{DoxyCompactList}\small\item\em Pauses an ongoing recording. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speech_to_text_af859a2161f2cfcee0dc51b7414c45a24}{stop\+Recording}} ()
+\begin{DoxyCompactList}\small\item\em Stops the recording process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speech_to_text_a3a1e36bb5039f38a6b436b16c7758d2b}{update\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Updates the recording timer display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speech_to_text_a15abad6f8b25830ed2bcddf52093b3b6}{transcribe\+Audio}} ()
+\begin{DoxyCompactList}\small\item\em Transcribes the recorded audio using an external Whisper model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_speech_to_text_acdd3e1fa68fd148c7338e8e92a4b0f5b}\label{class_speech_to_text_acdd3e1fa68fd148c7338e8e92a4b0f5b} 
+Ui\+::\+Speech\+To\+Text \texorpdfstring{$\ast$}{*} {\bfseries ui}
+\item 
+\Hypertarget{class_speech_to_text_acb0ad9a8685b7be786299bee73c1ad2e}\label{class_speech_to_text_acb0ad9a8685b7be786299bee73c1ad2e} 
+QAudio\+Recorder \texorpdfstring{$\ast$}{*} {\bfseries audio\+Recorder}
+\item 
+\Hypertarget{class_speech_to_text_ac28636bdcd04e07e4a6945ce4a8d93b1}\label{class_speech_to_text_ac28636bdcd04e07e4a6945ce4a8d93b1} 
+QString {\bfseries recorded\+Audio\+Path}
+\item 
+\Hypertarget{class_speech_to_text_affb8f9366cb0f7c00f7c29c7318668ed}\label{class_speech_to_text_affb8f9366cb0f7c00f7c29c7318668ed} 
+QTimer \texorpdfstring{$\ast$}{*} {\bfseries recording\+Timer}
+\item 
+\Hypertarget{class_speech_to_text_a29822f2c6ebf45f45cb18937f973a083}\label{class_speech_to_text_a29822f2c6ebf45f45cb18937f973a083} 
+int {\bfseries recording\+Seconds}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for recording and transcribing audio. 
+
+The \doxylink{class_speech_to_text}{Speech\+To\+Text} class provides the application with functionality to record audio, pause and stop recordings, track recording duration, and transcribe recorded audio using an external Whisper model.
+
+\begin{DoxyAuthor}{Author}
+Anya Liu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_speech_to_text_a570656da79877475c8e11250354535bb}\index{SpeechToText@{SpeechToText}!SpeechToText@{SpeechToText}}
+\index{SpeechToText@{SpeechToText}!SpeechToText@{SpeechToText}}
+\doxysubsubsection{\texorpdfstring{SpeechToText()}{SpeechToText()}}
+{\footnotesize\ttfamily \label{class_speech_to_text_a570656da79877475c8e11250354535bb} 
+Speech\+To\+Text\+::\+Speech\+To\+Text (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for the \doxylink{class_speech_to_text}{Speech\+To\+Text} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget (default\+: nullptr).\\
+\hline
+\end{DoxyParams}
+@usage \doxylink{class_speech_to_text}{Speech\+To\+Text} \texorpdfstring{$\ast$}{*}stt = new \doxylink{class_speech_to_text}{Speech\+To\+Text(nullptr)}; 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_speech_to_text_a867ea9fa0c4799eac383ff97a0372fce}\index{SpeechToText@{SpeechToText}!pauseRecording@{pauseRecording}}
+\index{pauseRecording@{pauseRecording}!SpeechToText@{SpeechToText}}
+\doxysubsubsection{\texorpdfstring{pauseRecording}{pauseRecording}}
+{\footnotesize\ttfamily \label{class_speech_to_text_a867ea9fa0c4799eac383ff97a0372fce} 
+void Speech\+To\+Text\+::pause\+Recording (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Pauses an ongoing recording. 
+
+@usage stt-\/\texorpdfstring{$>$}{>}\doxylink{class_speech_to_text_a867ea9fa0c4799eac383ff97a0372fce}{pause\+Recording()}; \Hypertarget{class_speech_to_text_a9b10ade87f8c36d996a852c74a8d4809}\index{SpeechToText@{SpeechToText}!startRecording@{startRecording}}
+\index{startRecording@{startRecording}!SpeechToText@{SpeechToText}}
+\doxysubsubsection{\texorpdfstring{startRecording}{startRecording}}
+{\footnotesize\ttfamily \label{class_speech_to_text_a9b10ade87f8c36d996a852c74a8d4809} 
+void Speech\+To\+Text\+::start\+Recording (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Starts audio recording. 
+
+If recording was previously paused, it resumes. Otherwise, it starts a new session.
+
+@usage \doxylink{class_speech_to_text}{Speech\+To\+Text} \texorpdfstring{$\ast$}{*}stt = new \doxylink{class_speech_to_text}{Speech\+To\+Text(nullptr)}; stt-\/\texorpdfstring{$>$}{>}\doxylink{class_speech_to_text_a9b10ade87f8c36d996a852c74a8d4809}{start\+Recording()}; \Hypertarget{class_speech_to_text_af859a2161f2cfcee0dc51b7414c45a24}\index{SpeechToText@{SpeechToText}!stopRecording@{stopRecording}}
+\index{stopRecording@{stopRecording}!SpeechToText@{SpeechToText}}
+\doxysubsubsection{\texorpdfstring{stopRecording}{stopRecording}}
+{\footnotesize\ttfamily \label{class_speech_to_text_af859a2161f2cfcee0dc51b7414c45a24} 
+void Speech\+To\+Text\+::stop\+Recording (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Stops the recording process. 
+
+@usage stt-\/\texorpdfstring{$>$}{>}\doxylink{class_speech_to_text_af859a2161f2cfcee0dc51b7414c45a24}{stop\+Recording()}; \Hypertarget{class_speech_to_text_a15abad6f8b25830ed2bcddf52093b3b6}\index{SpeechToText@{SpeechToText}!transcribeAudio@{transcribeAudio}}
+\index{transcribeAudio@{transcribeAudio}!SpeechToText@{SpeechToText}}
+\doxysubsubsection{\texorpdfstring{transcribeAudio}{transcribeAudio}}
+{\footnotesize\ttfamily \label{class_speech_to_text_a15abad6f8b25830ed2bcddf52093b3b6} 
+void Speech\+To\+Text\+::transcribe\+Audio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Transcribes the recorded audio using an external Whisper model. 
+
+This function processes the recorded audio file and converts it into text using an external transcription model.
+
+@usage stt-\/\texorpdfstring{$>$}{>}\doxylink{class_speech_to_text_a15abad6f8b25830ed2bcddf52093b3b6}{transcribe\+Audio()}; \Hypertarget{class_speech_to_text_a3a1e36bb5039f38a6b436b16c7758d2b}\index{SpeechToText@{SpeechToText}!updateTimer@{updateTimer}}
+\index{updateTimer@{updateTimer}!SpeechToText@{SpeechToText}}
+\doxysubsubsection{\texorpdfstring{updateTimer}{updateTimer}}
+{\footnotesize\ttfamily \label{class_speech_to_text_a3a1e36bb5039f38a6b436b16c7758d2b} 
+void Speech\+To\+Text\+::update\+Timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Updates the recording timer display. 
+
+This function is triggered every second while recording to update the UI. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Speech\+To\+Text/speechtotext.\+h\item 
+Speech\+To\+Text/speechtotext.\+cpp\end{DoxyCompactItemize}

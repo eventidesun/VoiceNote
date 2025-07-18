@@ -1,0 +1,192 @@
+\doxysection{storage Class Reference}
+\hypertarget{classstorage}{}\label{classstorage}\index{storage@{storage}}
+
+
+Interacts with the filesystem to provide basic I/O functionality.  
+
+
+
+
+{\ttfamily \#include $<$storage.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstorage_a55f5297949ab4ab66c09563e1d3875ec}{storage}} ()
+\begin{DoxyCompactList}\small\item\em Constructor creates a new storage object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstorage_ab762cb23cdcf0a1d35f49d42b4b4b278}{save\+File}} (const vector$<$ char $>$ \&file\+Data, const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Saves a file to disk. \end{DoxyCompactList}\item 
+vector$<$ char $>$ \mbox{\hyperlink{classstorage_ad8d75a388a71520800990aa9d81bc72e}{load\+File}} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Loads a file from disk into memory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstorage_adb2969b160f3ab32ac35f5ecf6b8bb7c}{delete\+File}} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Deletes a file from disk. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classstorage_acebdcff7454f40f0e4de14271903d1ba}{list\+Files}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves a list of all stored files. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstorage_ae8bbba80090575a347869aba0f1e6945}{file\+Exists}} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Checks if a file exists in storage. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classstorage_a21a1e777b0fc03722df20169d89cfb7f}{get\+Storage\+Usage}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the total storage used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstorage_a551387c17b878ecc5092d5e1d31707f3}{calculate\+Storage\+Usage}} ()
+\begin{DoxyCompactList}\small\item\em Calculates and updates the total storage used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classstorage_a9057a2986e183ae2f69412a40ea14f11}\label{classstorage_a9057a2986e183ae2f69412a40ea14f11} 
+string {\bfseries storage\+Path}
+\item 
+\Hypertarget{classstorage_a6d1e585b401d03258571ae88ad38d90f}\label{classstorage_a6d1e585b401d03258571ae88ad38d90f} 
+map$<$ string, size\+\_\+t $>$ {\bfseries file\+Index}
+\item 
+\Hypertarget{classstorage_ac958b3edb5492e567ae77e6e052a2ad3}\label{classstorage_ac958b3edb5492e567ae77e6e052a2ad3} 
+size\+\_\+t {\bfseries total\+Storage\+Used}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interacts with the filesystem to provide basic I/O functionality. 
+
+The storage class provides the application with basic I/O functionality, in particular, reading from and writing to files, deleting files, checking for the existence of files, and calculating the total storage used by the program.
+
+\begin{DoxyAuthor}{Author}
+Geoffrey Kong 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstorage_a55f5297949ab4ab66c09563e1d3875ec}\index{storage@{storage}!storage@{storage}}
+\index{storage@{storage}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{storage()}{storage()}}
+{\footnotesize\ttfamily \label{classstorage_a55f5297949ab4ab66c09563e1d3875ec} 
+storage\+::storage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor creates a new storage object. 
+
+\begin{DoxyReturn}{Returns}
+A newly created storage object.
+\end{DoxyReturn}
+@usage storage my\+Storage; //\+Creates a new storage object. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstorage_a551387c17b878ecc5092d5e1d31707f3}\index{storage@{storage}!calculateStorageUsage@{calculateStorageUsage}}
+\index{calculateStorageUsage@{calculateStorageUsage}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{calculateStorageUsage()}{calculateStorageUsage()}}
+{\footnotesize\ttfamily \label{classstorage_a551387c17b878ecc5092d5e1d31707f3} 
+void storage\+::calculate\+Storage\+Usage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculates and updates the total storage used. 
+
+This function iterates through all stored files and sums their sizes to update the total storage usage.
+
+@usage my\+Storage.\+calculate\+Storage\+Usage(); \Hypertarget{classstorage_adb2969b160f3ab32ac35f5ecf6b8bb7c}\index{storage@{storage}!deleteFile@{deleteFile}}
+\index{deleteFile@{deleteFile}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{deleteFile()}{deleteFile()}}
+{\footnotesize\ttfamily \label{classstorage_adb2969b160f3ab32ac35f5ecf6b8bb7c} 
+bool storage\+::delete\+File (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Deletes a file from disk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file to be deleted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file was successfully deleted, false otherwise.
+\end{DoxyReturn}
+@usage my\+Storage.\+delete\+File("{}\+Hello\+World.\+txt"{}); \Hypertarget{classstorage_ae8bbba80090575a347869aba0f1e6945}\index{storage@{storage}!fileExists@{fileExists}}
+\index{fileExists@{fileExists}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{fileExists()}{fileExists()}}
+{\footnotesize\ttfamily \label{classstorage_ae8bbba80090575a347869aba0f1e6945} 
+bool storage\+::file\+Exists (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a file exists in storage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file to check for existence.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file exists, false otherwise.
+\end{DoxyReturn}
+@usage my\+Storage.\+file\+Exists("{}\+Hello\+World.\+txt"{}); \Hypertarget{classstorage_a21a1e777b0fc03722df20169d89cfb7f}\index{storage@{storage}!getStorageUsage@{getStorageUsage}}
+\index{getStorageUsage@{getStorageUsage}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{getStorageUsage()}{getStorageUsage()}}
+{\footnotesize\ttfamily \label{classstorage_a21a1e777b0fc03722df20169d89cfb7f} 
+size\+\_\+t storage\+::get\+Storage\+Usage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the total storage used. 
+
+\begin{DoxyReturn}{Returns}
+The total storage used in bytes.
+\end{DoxyReturn}
+@usage my\+Storage.\+get\+Storage\+Usage(); \Hypertarget{classstorage_acebdcff7454f40f0e4de14271903d1ba}\index{storage@{storage}!listFiles@{listFiles}}
+\index{listFiles@{listFiles}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{listFiles()}{listFiles()}}
+{\footnotesize\ttfamily \label{classstorage_acebdcff7454f40f0e4de14271903d1ba} 
+vector$<$ string $>$ storage\+::list\+Files (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves a list of all stored files. 
+
+\begin{DoxyReturn}{Returns}
+A vector of strings containing the names of all stored files.
+\end{DoxyReturn}
+@usage my\+Storage.\+list\+Files(); \Hypertarget{classstorage_ad8d75a388a71520800990aa9d81bc72e}\index{storage@{storage}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{loadFile()}{loadFile()}}
+{\footnotesize\ttfamily \label{classstorage_ad8d75a388a71520800990aa9d81bc72e} 
+vector$<$ char $>$ storage\+::load\+File (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Loads a file from disk into memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file to be loaded.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of characters containing the file\textquotesingle{}s contents. Returns an empty vector if the file cannot be opened.
+\end{DoxyReturn}
+@usage my\+Storage.\+load\+File("{}\+Hello\+World.\+txt"{}); \Hypertarget{classstorage_ab762cb23cdcf0a1d35f49d42b4b4b278}\index{storage@{storage}!saveFile@{saveFile}}
+\index{saveFile@{saveFile}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{saveFile()}{saveFile()}}
+{\footnotesize\ttfamily \label{classstorage_ab762cb23cdcf0a1d35f49d42b4b4b278} 
+bool storage\+::save\+File (\begin{DoxyParamCaption}\item[{const vector$<$ char $>$ \&}]{file\+Data}{, }\item[{const string \&}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Saves a file to disk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Data} & Data to be written to the disk, broken up into an array of individual characters or binary digits.\\
+\hline
+{\em file\+Name} & The name of the file that the data should be saved as.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True or False, depending on whether or not the operation to save data was successful or not.
+\end{DoxyReturn}
+@usage my\+Storage.\+save\+File(\{\textquotesingle{}H\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{},\textquotesingle{}, \textquotesingle{} \textquotesingle{}, \textquotesingle{}W\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, \textquotesingle{}!\textquotesingle{}\}, "{}\+Hello\+World.\+txt"{}); 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+storage\+\_\+class/storage.\+h\item 
+storage\+\_\+class/storage.\+cpp\end{DoxyCompactItemize}

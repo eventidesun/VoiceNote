@@ -1,0 +1,38 @@
+# JetBrains / CLion
+.idea/
+*.iml
+
+# CMake build folders
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Object and binary files
+*.o
+*.obj
+*.exe
+*.out
+
+# System files
+.DS_Store
+
+# Qt auto generated build folders
+**/build/
+**/SpeechToText_autogen/
+**/*.app
+
+# Backup files
+*~
+*.swp
+
+# logs or generated audio files
+*.log
+*.wav
+*.mp3
+*.m4a
+*.aac
+whisper.cpp/models/ggml-base.en.bin
+AI_Summarizer/models/Llama-3.2-1B-Instruct-Q4_K_S.gguf
+AI_Summarizer/src/models/Llama-3.2-1B-Instruct-Q4_K_S.gguf

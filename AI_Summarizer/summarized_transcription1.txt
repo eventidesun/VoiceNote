@@ -1,0 +1,22 @@
+**Summary:**
+
+The "Proposal" stage of the CS3307 group project is due on Friday, January 31, 2025. The purpose of this stage is to propose a group project, which must meet certain requirements, such as:
+
+* Crafting a proposal for a software project
+* Outlining requirements for the project
+* Identifying potential risks and strategies to mitigate them
+
+The submission must be 1-2 pages in length, with a cover page and a proposal section that outlines the project's scope and features.
+
+**Key Points for Notes:**
+
+* The proposal stage is due on Friday, January 31, 2025
+* The proposal should be 1-2 pages in length, with a cover page and a proposal section
+* The proposal section should include:
+	+ A description of the project
+	+ A list of required features, optional features, and wish-list features
+	+ Risks associated with the project
+	+ Strategies for mitigating risks
+	+ Any additional notes or references
+* The proposal section should be organized into three lists: required features, optional features, and wish-list features
+* The proposal stage is expected to be a group effort, but each member of the group must contribute equally.

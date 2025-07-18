@@ -1,0 +1,54 @@
+\doxysection{speechtotext.\+h}
+\hypertarget{speechtotext_8h_source}{}\label{speechtotext_8h_source}\index{SpeechToText/speechtotext.h@{SpeechToText/speechtotext.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SPEECHTOTEXT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SPEECHTOTEXT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QAudioRecorder>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QUrl>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{class\ }SpeechToText;}
+\DoxyCodeLine{00012\ \}}
+\DoxyCodeLine{00013\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_speech_to_text_a570656da79877475c8e11250354535bb}{SpeechToText}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_speech_to_text_a570656da79877475c8e11250354535bb}{SpeechToText}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_speech_to_text_ad2107b90fc1fbd1390ea8bdb673f2c62}{\string~SpeechToText}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_to_text_a9b10ade87f8c36d996a852c74a8d4809}{startRecording}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_to_text_a867ea9fa0c4799eac383ff97a0372fce}{pauseRecording}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_to_text_af859a2161f2cfcee0dc51b7414c45a24}{stopRecording}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_to_text_a3a1e36bb5039f38a6b436b16c7758d2b}{updateTimer}}();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_to_text_a15abad6f8b25830ed2bcddf52093b3b6}{transcribeAudio}}();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{comment}{//Pointer\ to\ the\ UI\ instance.}}
+\DoxyCodeLine{00093\ \ \ \ \ Ui::SpeechToText\ *ui;}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{//Audio\ recorder\ instance\ for\ capturing\ audio.}}
+\DoxyCodeLine{00095\ \ \ \ \ QAudioRecorder\ *audioRecorder;}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{//Path\ where\ the\ recorded\ audio\ file\ is\ saved.}}
+\DoxyCodeLine{00097\ \ \ \ \ QString\ recordedAudioPath;}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{comment}{//Timer\ instance\ for\ tracking\ recording\ duration.}}
+\DoxyCodeLine{00099\ \ \ \ \ QTimer\ *recordingTimer;}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{comment}{//Stores\ the\ elapsed\ recording\ time\ in\ seconds.}}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{int}\ recordingSeconds;}
+\DoxyCodeLine{00102\ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

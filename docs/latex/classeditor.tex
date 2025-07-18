@@ -1,0 +1,233 @@
+\doxysection{editor Class Reference}
+\hypertarget{classeditor}{}\label{classeditor}\index{editor@{editor}}
+
+
+A class to edit files.  
+
+
+
+
+{\ttfamily \#include $<$editor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classeditor_a6376583de10b074e70084878b4908af0}{editor}} (\mbox{\hyperlink{classstorage}{storage}} store)
+\begin{DoxyCompactList}\small\item\em Contructor of the editor class. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classeditor_a90583c8ba5e6c4b44e905d0fd19a0569}{load\+File}} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Loads a file from storage. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classeditor_ad58125b6a186ff8caab1d685ec32c0be}{find\+String}} (string s)
+\begin{DoxyCompactList}\small\item\em Finds a string in the file. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classeditor_a48e469ac2fa6c74e66550ad38f2ad154}{get\+File\+List}} ()
+\begin{DoxyCompactList}\small\item\em Gets list of file names from storage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classeditor_a8713b2f830d0c68429e06723f9f38f28}{change\+Name}} (string new\+File, string old\+File)
+\begin{DoxyCompactList}\small\item\em Changes the name of the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classeditor_adb3935421048c342c4a21bb476941b5e}{replace\+String}} (string s)
+\begin{DoxyCompactList}\small\item\em Replaces the found string in the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classeditor_a206dfc857fe9850d8bbee8de676ae614}{save\+Edit}} ()
+\begin{DoxyCompactList}\small\item\em Saves the edit to local drive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classeditor_a91b9a4fdbdb76093c021f42b748650eb}{delete\+File}} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Deletes file. \end{DoxyCompactList}\item 
+\Hypertarget{classeditor_a0327d31efc6f0300d25f0033e0fa2e91}\label{classeditor_a0327d31efc6f0300d25f0033e0fa2e91} 
+\mbox{\hyperlink{classstorage}{storage}} \& {\bfseries get\+Storage} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstorage}{storage}} \mbox{\hyperlink{classeditor_a2604a6fd361918970c2e2a5f6e7d09ef}{storage1}}
+\item 
+string \mbox{\hyperlink{classeditor_add6e0f06b6c9e1b92b8779f8bf69757d}{temp}}
+\item 
+string \mbox{\hyperlink{classeditor_af56e03795604e5fdcc6bbb7eab6582d8}{file}}
+\item 
+int \mbox{\hyperlink{classeditor_a073d56b42a715cbad132bd01d29fbf3a}{index}}
+\item 
+int \mbox{\hyperlink{classeditor_abf1678aae89ecb7ca8bda61f21e20966}{length}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to edit files. 
+
+This class allows other classes to edit and delete files from storage.
+
+\begin{DoxyAuthor}{Author}
+Jasmine Vu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classeditor_a6376583de10b074e70084878b4908af0}\index{editor@{editor}!editor@{editor}}
+\index{editor@{editor}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{editor()}{editor()}}
+{\footnotesize\ttfamily \label{classeditor_a6376583de10b074e70084878b4908af0} 
+editor\+::editor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstorage}{storage}}}]{store}{}\end{DoxyParamCaption})}
+
+
+
+Contructor of the editor class. 
+
+This function creates an editor object with a storage object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em store} & The storage object in which files will be loaded and stored.\\
+\hline
+\end{DoxyParams}
+@usage editor my\+Editor(storage my\+Storage); 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classeditor_a8713b2f830d0c68429e06723f9f38f28}\index{editor@{editor}!changeName@{changeName}}
+\index{changeName@{changeName}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{changeName()}{changeName()}}
+{\footnotesize\ttfamily \label{classeditor_a8713b2f830d0c68429e06723f9f38f28} 
+void editor\+::change\+Name (\begin{DoxyParamCaption}\item[{string}]{new\+File}{, }\item[{string}]{old\+File}{}\end{DoxyParamCaption})}
+
+
+
+Changes the name of the file. 
+
+This function changes the name of the file by saving a file with the new name with the same contents. Then, the old file is deleted.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+File} & The name of the new file \\
+\hline
+{\em old\+File} & The name of the old file\\
+\hline
+\end{DoxyParams}
+@usage my\+Editor.\+change\+Name("{}newfilename.\+txt"{}, "{}test.\+txt"{}) \Hypertarget{classeditor_a91b9a4fdbdb76093c021f42b748650eb}\index{editor@{editor}!deleteFile@{deleteFile}}
+\index{deleteFile@{deleteFile}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{deleteFile()}{deleteFile()}}
+{\footnotesize\ttfamily \label{classeditor_a91b9a4fdbdb76093c021f42b748650eb} 
+void editor\+::delete\+File (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Deletes file. 
+
+This function deletes a specified file from local storage An error message is printed if the file doesn\textquotesingle{}t exist
+
+@usage my\+Editor.\+save\+Edit(); \Hypertarget{classeditor_ad58125b6a186ff8caab1d685ec32c0be}\index{editor@{editor}!findString@{findString}}
+\index{findString@{findString}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{findString()}{findString()}}
+{\footnotesize\ttfamily \label{classeditor_ad58125b6a186ff8caab1d685ec32c0be} 
+bool editor\+::find\+String (\begin{DoxyParamCaption}\item[{string}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Finds a string in the file. 
+
+This function searches the file for a specified string. Then, the index and the length of the string is saved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The string being found.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False if string was not found and true if it was found
+\end{DoxyReturn}
+@usage bool found = my\+Editor.\+find\+String("{}test"{}); \Hypertarget{classeditor_a48e469ac2fa6c74e66550ad38f2ad154}\index{editor@{editor}!getFileList@{getFileList}}
+\index{getFileList@{getFileList}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{getFileList()}{getFileList()}}
+{\footnotesize\ttfamily \label{classeditor_a48e469ac2fa6c74e66550ad38f2ad154} 
+vector$<$ string $>$ editor\+::get\+File\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets list of file names from storage. 
+
+Using storage object, this method retrieves the list of file names and returns it
+
+\begin{DoxyReturn}{Returns}
+A list of all the file names
+\end{DoxyReturn}
+@usage vector$<$string$>$ list = my\+Editor.\+get\+File\+List(); \Hypertarget{classeditor_a90583c8ba5e6c4b44e905d0fd19a0569}\index{editor@{editor}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{loadFile()}{loadFile()}}
+{\footnotesize\ttfamily \label{classeditor_a90583c8ba5e6c4b44e905d0fd19a0569} 
+string editor\+::load\+File (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Loads a file from storage. 
+
+This function loads a spcified file from local hard drive using a storage object. Then the file is stored as a string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The file\textquotesingle{}s name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file\textquotesingle{}s contents as a string.
+\end{DoxyReturn}
+@usage string file = my\+Editor.\+load\+File("{}123.\+txt"{}); \Hypertarget{classeditor_adb3935421048c342c4a21bb476941b5e}\index{editor@{editor}!replaceString@{replaceString}}
+\index{replaceString@{replaceString}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{replaceString()}{replaceString()}}
+{\footnotesize\ttfamily \label{classeditor_adb3935421048c342c4a21bb476941b5e} 
+void editor\+::replace\+String (\begin{DoxyParamCaption}\item[{string}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Replaces the found string in the file. 
+
+This function replaces the string found with \doxylink{classeditor_ad58125b6a186ff8caab1d685ec32c0be}{find\+String()} function with a specified string. Saves the edit in a private variable called replace.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The string that\textquotesingle{}s replacing the other string\\
+\hline
+\end{DoxyParams}
+@usage my\+Editor.\+replace\+String("{}\+Hello!"{}); \Hypertarget{classeditor_a206dfc857fe9850d8bbee8de676ae614}\index{editor@{editor}!saveEdit@{saveEdit}}
+\index{saveEdit@{saveEdit}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{saveEdit()}{saveEdit()}}
+{\footnotesize\ttfamily \label{classeditor_a206dfc857fe9850d8bbee8de676ae614} 
+void editor\+::save\+Edit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Saves the edit to local drive. 
+
+This function saves the most recently opened file to local storage using storage object
+
+@usage my\+Editor.\+save\+Edit(); 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classeditor_af56e03795604e5fdcc6bbb7eab6582d8}\index{editor@{editor}!file@{file}}
+\index{file@{file}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily \label{classeditor_af56e03795604e5fdcc6bbb7eab6582d8} 
+string editor\+::file\hspace{0.3cm}{\ttfamily [private]}}
+
+The file name \Hypertarget{classeditor_a073d56b42a715cbad132bd01d29fbf3a}\index{editor@{editor}!index@{index}}
+\index{index@{index}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily \label{classeditor_a073d56b42a715cbad132bd01d29fbf3a} 
+int editor\+::index\hspace{0.3cm}{\ttfamily [private]}}
+
+A vairable to hold the index in a file \Hypertarget{classeditor_abf1678aae89ecb7ca8bda61f21e20966}\index{editor@{editor}!length@{length}}
+\index{length@{length}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \label{classeditor_abf1678aae89ecb7ca8bda61f21e20966} 
+int editor\+::length\hspace{0.3cm}{\ttfamily [private]}}
+
+A variable to hold the length of a string \Hypertarget{classeditor_a2604a6fd361918970c2e2a5f6e7d09ef}\index{editor@{editor}!storage1@{storage1}}
+\index{storage1@{storage1}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{storage1}{storage1}}
+{\footnotesize\ttfamily \label{classeditor_a2604a6fd361918970c2e2a5f6e7d09ef} 
+\mbox{\hyperlink{classstorage}{storage}} editor\+::storage1\hspace{0.3cm}{\ttfamily [private]}}
+
+A storage variable for storage object. Used to load and save files to local drive \Hypertarget{classeditor_add6e0f06b6c9e1b92b8779f8bf69757d}\index{editor@{editor}!temp@{temp}}
+\index{temp@{temp}!editor@{editor}}
+\doxysubsubsection{\texorpdfstring{temp}{temp}}
+{\footnotesize\ttfamily \label{classeditor_add6e0f06b6c9e1b92b8779f8bf69757d} 
+string editor\+::temp\hspace{0.3cm}{\ttfamily [private]}}
+
+A temporary string to hold file\textquotesingle{}s contents 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+editor\+\_\+class/editor.\+h\item 
+editor\+\_\+class/editor.\+cpp\end{DoxyCompactItemize}

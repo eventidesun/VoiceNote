@@ -1,0 +1,45 @@
+\doxysection{managerecordingpage.\+h}
+\hypertarget{managerecordingpage_8h_source}{}\label{managerecordingpage_8h_source}\index{manage\_recording\_page/managerecordingpage.h@{manage\_recording\_page/managerecordingpage.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MANAGERECORDINGPAGE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MANAGERECORDINGPAGE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QListWidgetItem>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}../editor\_class/editor.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }ManageRecordingPage;}
+\DoxyCodeLine{00011\ \}}
+\DoxyCodeLine{00012\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_manage_recording_page_a73277ed53e148275b5fa044a6df0641a}{ManageRecordingPage}}\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_manage_recording_page_a73277ed53e148275b5fa044a6df0641a}{ManageRecordingPage}}(QWidget\ *parent,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classeditor}{editor}}\&\ editorObj);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_manage_recording_page_af78cf74f2c9a49dba4ead2d02c115003}{\string~ManageRecordingPage}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_manage_recording_page_afbeba98940ac61c60e460a4e1ccc7a06}{onDeleteNote}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_manage_recording_page_ab4def2a8553e4e160652536c6f98f8ee}{onRenameNote}}();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_manage_recording_page_ace4466fb1594f3b07a3221f768322d7b}{onNoteDoubleCliked}}(QListWidgetItem\ *item);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00094\ \ \ \ \ Ui::ManageRecordingPage\ *\mbox{\hyperlink{class_manage_recording_page_a51ef62b9e22faafe8bfacc30fd3bfbe0}{ui}};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{classeditor}{editor}}\ \mbox{\hyperlink{class_manage_recording_page_abb6188bd7cf9678efc5eec6e11ba5c66}{m\_editor}};;}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_manage_recording_page_a41884ac26b0380bde74084955c530d06}{populateRecordingsList}}();}
+\DoxyCodeLine{00111\ \};}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MANAGERECORDINGPAGE\_H}}
+
+\end{DoxyCode}

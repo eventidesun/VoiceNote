@@ -1,0 +1,35 @@
+Project Description
+This stage is part of the group project for CS3307.  
+Purpose of the Stage
+The general purpose of this assignment is to propose a group project for the course, helping to set initial requirements and scope for the work you will be doing.   In particular, this stage will give you experience in:
+•	crafting a proposal for a software project
+•	outlining requirements for a project and identifying risk where it may appear
+Assigned
+Sunday, January 12, 2025 (please check the main course website regularly for any updates or revisions)
+Due
+This stage is due Friday, January 31, 2025 by 11:55pm (midnight-ish) through an electronic submission through the OWL site. If you require assistance, help is available online through OWL.
+Late Penalty
+Late assignments will be accepted for up to two days after the due date, with weekends counting as a single day; the late penalty is 20% of the available marks per day. Lateness is based on the time the assignment is submitted.
+Group Effort
+This stage of the project is expected to be a group effort, with each member of the group contributing equally in a reasonable fashion.   Feel free to discuss ideas with other groups in the class; however, your submission must be the work of your own group.  If it is determined that you are guilty of cheating on the assignment, you could receive a grade of zero with a notice of this offence submitted to the Dean of your home faculty for inclusion in your academic record.
+What to Hand in
+Your stage submission, as noted above, will be electronically through OWL.  You are to submit all relevant documentation as discussed below.  Only one submission per group is necessary.  
+Stage Task
+In this stage, you will craft a proposal for the group project that you will be working on in this course.  As discussed in the lectures, you will be able to choose what you are doing for the project, provided that it targets the Raspberry Pi as a computing platform (even if it does so virtually) and is written in the C++ programming language.  We will provide feedback on your proposal to shape things further and make sure that each group is working on something of comparable scope and difficulty.
+
+The Proposal
+Your proposal should be roughly 1-2 pages in length, with a cover page giving a tentative name to your project, indicating your group number, and listing your group members.  The body of your proposal should be composed of the following sections.
+Description
+This should provide an overview of your project, describing it in enough detail that the reader will have a pretty good idea of what you are aiming to do in the project.  The focus, of course, should be on the software you are developing, but be sure to discuss any hardware or software elements you might be using in conjunction with the Raspberry Pi.  If you would like to use a departmental Raspberry Pi kit in your project, you should indicate so here; instructions on collecting these kits will be posted on OWL in the near future.  As many of you are likely to be doing pure software projects, it is expected that most groups will not actually require a kit for their projects.
+Features
+In this section, you detail the various features of your project.  It is likely easiest to present this in the form a bulleted list, providing enough information in each point to give the reader a sense of the scope and degree of difficulty of each feature.  You should organize your features into three separate lists:
+•	Required features.  These features are core to the project and must be delivered to have a minimum viable product.  In other words, you cannot get by without these features.
+•	Optional features.  These features are not strictly needed, but would definitely help round the project out to something more complete, robust, and usable.  You can get by without these features, but your project would be improved if you could implement and deliver them.
+•	Wish-list features.  These features are definitely not needed and are complex or time consuming enough that they are not likely to be delivered.  That said, doing so would add an additional layer of polish and finesse to your project and so would still be worth doing if you had the time and resources for them.
+Risks
+Every project has factors that can threaten its successful delivery.  Sources of risk can include lack of familiarity with technologies used in the project, reliance on technology that might be unstable, brittle, or complex to use, and so on.  In this section, you should identify and discuss the risks associated with your project, as well as potential strategies for mitigating those risks.  Risks on their own are not necessarily a bad thing, especially if you have ideas on how to handle them should the need to do so arise.
+Other Notes
+If there is anything else you would like to discuss about your project, now is the time to do so.  In particular, this would be a good time to discuss additional libraries/packages/technologies that you plan on using with your project, if they haven't already been mentioned.  This is also a good time to discuss particular group expertise of note, especially if it will be leveraged in some way for the project.  (For example, if a group member has experience in connecting sensors to a Pi and you are proposing an Internet of Things project, that is worth mentioning here.)
+References
+This section is optional, but if you have references to any papers, documents, books, or websites that are relevant to your project or this proposal, here's a good spot to list them.
+

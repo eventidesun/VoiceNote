@@ -1,0 +1,52 @@
+\doxysection{storage.\+h}
+\hypertarget{storage_8h_source}{}\label{storage_8h_source}\index{storage\_class/storage.h@{storage\_class/storage.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ STORAGE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ STORAGE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstorage_a55f5297949ab4ab66c09563e1d3875ec}{storage}}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstorage_a55f5297949ab4ab66c09563e1d3875ec}{storage}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstorage_ab762cb23cdcf0a1d35f49d42b4b4b278}{saveFile}}(\textcolor{keyword}{const}\ vector<char>\&\ fileData,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ fileName);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ vector<char>\ \mbox{\hyperlink{classstorage_ad8d75a388a71520800990aa9d81bc72e}{loadFile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ fileName);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstorage_adb2969b160f3ab32ac35f5ecf6b8bb7c}{deleteFile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ fileName);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ vector<string>\ \mbox{\hyperlink{classstorage_acebdcff7454f40f0e4de14271903d1ba}{listFiles}}();}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstorage_ae8bbba80090575a347869aba0f1e6945}{fileExists}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ fileName);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classstorage_a21a1e777b0fc03722df20169d89cfb7f}{getStorageUsage}}();}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ directory\ where\ files\ are\ stored.}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ storagePath;}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ A\ mapping\ of\ stored\ file\ names\ to\ their\ respective\ sizes\ in\ bytes.}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ map<string,\ size\_t>\ fileIndex;}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ total\ amount\ of\ storage\ used\ by\ all\ stored\ files.}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ totalStorageUsed;}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstorage_a551387c17b878ecc5092d5e1d31707f3}{calculateStorageUsage}}();}
+\DoxyCodeLine{00130\ \};}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

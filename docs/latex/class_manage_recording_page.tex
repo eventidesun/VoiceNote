@@ -1,0 +1,164 @@
+\doxysection{Manage\+Recording\+Page Class Reference}
+\hypertarget{class_manage_recording_page}{}\label{class_manage_recording_page}\index{ManageRecordingPage@{ManageRecordingPage}}
+
+
+A class to display ui of all recorded transcripts.  
+
+
+
+
+{\ttfamily \#include $<$managerecordingpage.\+h$>$}
+
+Inheritance diagram for Manage\+Recording\+Page\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_manage_recording_page}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_manage_recording_page_a73277ed53e148275b5fa044a6df0641a}{Manage\+Recording\+Page}} (QWidget \texorpdfstring{$\ast$}{*}parent, const \mbox{\hyperlink{classeditor}{editor}} \&editor\+Obj)
+\begin{DoxyCompactList}\small\item\em Constructor of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_manage_recording_page_af78cf74f2c9a49dba4ead2d02c115003}{\texorpdfstring{$\sim$}{\string~}\+Manage\+Recording\+Page}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_manage_recording_page_afbeba98940ac61c60e460a4e1ccc7a06}{on\+Delete\+Note}} ()
+\begin{DoxyCompactList}\small\item\em Deletes a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manage_recording_page_ab4def2a8553e4e160652536c6f98f8ee}{on\+Rename\+Note}} ()
+\begin{DoxyCompactList}\small\item\em Renames a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manage_recording_page_ace4466fb1594f3b07a3221f768322d7b}{on\+Note\+Double\+Cliked}} (QList\+Widget\+Item \texorpdfstring{$\ast$}{*}item)
+\begin{DoxyCompactList}\small\item\em Goes to Individual Page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_manage_recording_page_a41884ac26b0380bde74084955c530d06}{populate\+Recordings\+List}} ()
+\begin{DoxyCompactList}\small\item\em Lists all files in storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Manage\+Recording\+Page \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_manage_recording_page_a51ef62b9e22faafe8bfacc30fd3bfbe0}{ui}}
+\item 
+\mbox{\hyperlink{classeditor}{editor}} \mbox{\hyperlink{class_manage_recording_page_abb6188bd7cf9678efc5eec6e11ba5c66}{m\+\_\+editor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to display ui of all recorded transcripts. 
+
+This class builds the graphics for the menu to see all the transcripts This class uses QT objects for displays
+
+\begin{DoxyAuthor}{Author}
+Vaishnavi Gudimella 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_manage_recording_page_a73277ed53e148275b5fa044a6df0641a}\index{ManageRecordingPage@{ManageRecordingPage}!ManageRecordingPage@{ManageRecordingPage}}
+\index{ManageRecordingPage@{ManageRecordingPage}!ManageRecordingPage@{ManageRecordingPage}}
+\doxysubsubsection{\texorpdfstring{ManageRecordingPage()}{ManageRecordingPage()}}
+{\footnotesize\ttfamily \label{class_manage_recording_page_a73277ed53e148275b5fa044a6df0641a} 
+Manage\+Recording\+Page\+::\+Manage\+Recording\+Page (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{, }\item[{const \mbox{\hyperlink{classeditor}{editor}} \&}]{editor\+Obj}{}\end{DoxyParamCaption})}
+
+
+
+Constructor of the class. 
+
+Builds the ui for menu to see all transcripts. Sets up buttons for user to select a certain transcript to view and edit
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & A QWidget to render QObjects \\
+\hline
+{\em editor\+Obj} & An editor object used to interact with stored files\\
+\hline
+\end{DoxyParams}
+@usage \Hypertarget{class_manage_recording_page_af78cf74f2c9a49dba4ead2d02c115003}\index{ManageRecordingPage@{ManageRecordingPage}!````~ManageRecordingPage@{\texorpdfstring{$\sim$}{\string~}ManageRecordingPage}}
+\index{````~ManageRecordingPage@{\texorpdfstring{$\sim$}{\string~}ManageRecordingPage}!ManageRecordingPage@{ManageRecordingPage}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ManageRecordingPage()}{\string~ManageRecordingPage()}}
+{\footnotesize\ttfamily \label{class_manage_recording_page_af78cf74f2c9a49dba4ead2d02c115003} 
+Manage\+Recording\+Page\+::\texorpdfstring{$\sim$}{\string~}\+Manage\+Recording\+Page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor of the class. 
+
+Deletes the ui object 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_manage_recording_page_afbeba98940ac61c60e460a4e1ccc7a06}\index{ManageRecordingPage@{ManageRecordingPage}!onDeleteNote@{onDeleteNote}}
+\index{onDeleteNote@{onDeleteNote}!ManageRecordingPage@{ManageRecordingPage}}
+\doxysubsubsection{\texorpdfstring{onDeleteNote}{onDeleteNote}}
+{\footnotesize\ttfamily \label{class_manage_recording_page_afbeba98940ac61c60e460a4e1ccc7a06} 
+void Manage\+Recording\+Page\+::on\+Delete\+Note (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Deletes a file. 
+
+Allows users to delete notes from local storage. Before file is deleted, a confirmation message appears
+
+@usage \Hypertarget{class_manage_recording_page_ace4466fb1594f3b07a3221f768322d7b}\index{ManageRecordingPage@{ManageRecordingPage}!onNoteDoubleCliked@{onNoteDoubleCliked}}
+\index{onNoteDoubleCliked@{onNoteDoubleCliked}!ManageRecordingPage@{ManageRecordingPage}}
+\doxysubsubsection{\texorpdfstring{onNoteDoubleCliked}{onNoteDoubleCliked}}
+{\footnotesize\ttfamily \label{class_manage_recording_page_ace4466fb1594f3b07a3221f768322d7b} 
+void Manage\+Recording\+Page\+::on\+Note\+Double\+Cliked (\begin{DoxyParamCaption}\item[{QList\+Widget\+Item \texorpdfstring{$\ast$}{*}}]{item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Goes to Individual Page. 
+
+When a note is doubled clicked, this method sends the user to the Individual Page UI
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The individual page\\
+\hline
+\end{DoxyParams}
+@usage \Hypertarget{class_manage_recording_page_ab4def2a8553e4e160652536c6f98f8ee}\index{ManageRecordingPage@{ManageRecordingPage}!onRenameNote@{onRenameNote}}
+\index{onRenameNote@{onRenameNote}!ManageRecordingPage@{ManageRecordingPage}}
+\doxysubsubsection{\texorpdfstring{onRenameNote}{onRenameNote}}
+{\footnotesize\ttfamily \label{class_manage_recording_page_ab4def2a8553e4e160652536c6f98f8ee} 
+void Manage\+Recording\+Page\+::on\+Rename\+Note (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Renames a file. 
+
+Allows users to rename files from local storage
+
+@usage \Hypertarget{class_manage_recording_page_a41884ac26b0380bde74084955c530d06}\index{ManageRecordingPage@{ManageRecordingPage}!populateRecordingsList@{populateRecordingsList}}
+\index{populateRecordingsList@{populateRecordingsList}!ManageRecordingPage@{ManageRecordingPage}}
+\doxysubsubsection{\texorpdfstring{populateRecordingsList()}{populateRecordingsList()}}
+{\footnotesize\ttfamily \label{class_manage_recording_page_a41884ac26b0380bde74084955c530d06} 
+void Manage\+Recording\+Page\+::populate\+Recordings\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lists all files in storage. 
+
+A private method that lets a list of filenames from editor and displays all files as a list
+
+@usage 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_manage_recording_page_abb6188bd7cf9678efc5eec6e11ba5c66}\index{ManageRecordingPage@{ManageRecordingPage}!m\_editor@{m\_editor}}
+\index{m\_editor@{m\_editor}!ManageRecordingPage@{ManageRecordingPage}}
+\doxysubsubsection{\texorpdfstring{m\_editor}{m\_editor}}
+{\footnotesize\ttfamily \label{class_manage_recording_page_abb6188bd7cf9678efc5eec6e11ba5c66} 
+\mbox{\hyperlink{classeditor}{editor}} Manage\+Recording\+Page\+::m\+\_\+editor\hspace{0.3cm}{\ttfamily [private]}}
+
+A private variable for storage object \Hypertarget{class_manage_recording_page_a51ef62b9e22faafe8bfacc30fd3bfbe0}\index{ManageRecordingPage@{ManageRecordingPage}!ui@{ui}}
+\index{ui@{ui}!ManageRecordingPage@{ManageRecordingPage}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \label{class_manage_recording_page_a51ef62b9e22faafe8bfacc30fd3bfbe0} 
+Ui\+::\+Manage\+Recording\+Page\texorpdfstring{$\ast$}{*} Manage\+Recording\+Page\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+A private variable that contains the graphics of the UI 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+manage\+\_\+recording\+\_\+page/managerecordingpage.\+h\item 
+manage\+\_\+recording\+\_\+page/managerecordingpage.\+cpp\end{DoxyCompactItemize}

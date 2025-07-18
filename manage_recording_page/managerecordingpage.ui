@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManageRecordingPage</class>
+ <widget class="QWidget" name="ManageRecordingPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1512</width>
+    <height>858</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ManageRecordingPage</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QWidget {
+     background-color: #fdfaf5;
+     font-family: 'Helvetica', sans-serif;
+    }
+
+    QLabel {
+     color: #2c2c2c;
+     font-weight: bold;
+    }
+
+    QPushButton {
+     background-color: #007acc;
+     color: white;
+     border-radius: 8px;
+     padding: 6px 14px;
+     font-weight: bold;
+     font-size: 13px;
+    }
+
+    QPushButton:hover {
+     background-color: #005f99;
+    }
+
+    QListWidget {
+     background-color: #ffffff;
+     border: 1px solid #d0d0d0;
+     border-radius: 8px;
+     padding: 8px;
+     font-size: 15px;
+    }
+
+    QLabel#noRecordingsLabel {
+     color: #555555;
+     font-size: 15px;
+     margin-top: 12px;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="topButtonLayout">
+     <item>
+      <widget class="QPushButton" name="new_note_button">
+       <property name="text">
+        <string>+ New Note</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="delete_note_button">
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="rename_note_button">
+       <property name="text">
+        <string>Rename</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="spacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QListWidget" name="recordingsList"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="noRecordingsLabel">
+     <property name="visible">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;No recordings yet.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Click &lt;span style=&quot; font-weight:600;&quot;&gt;+ New Note&lt;/span&gt; to create your first!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
